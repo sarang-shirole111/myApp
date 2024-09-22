@@ -8,11 +8,16 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'myApp';
+  fav = false;
 
   constructor(private readonly router:Router){}
 
   navigateTo(route:string){
     console.log("route:",route);
     this.router.navigateByUrl(route)
+  }
+
+  favorite(){
+    this.fav = !this.fav;
   }
 }

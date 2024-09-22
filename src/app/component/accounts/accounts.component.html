@@ -1,1 +1,19 @@
-<p>accounts works!</p>
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+  <img src="assets/SarangShirolePhoto.jpg" alt="John" style="width:100%">
+  <h1>Sarang Shirole</h1>
+  <p class="title">Senior Software Engineer</p>
+  <p>Encora Innovation Labs</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button (click)="showContact()">Contact</button></p>
+  <p *ngIf="showContactflag">
+    Mob: 9686058060
+    <p *ngIf="showContactflag">
+        Mail: sarang.shirole111<span>&#64;</span>gmail.com</p>
+</div>

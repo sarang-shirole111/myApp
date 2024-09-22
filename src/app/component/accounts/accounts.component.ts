@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './accounts.component.scss'
 })
 export class AccountsComponent {
-
+  showContactflag = false;
+  showContact(){
+    this.showContactflag = !this.showContactflag;
+  }
 }

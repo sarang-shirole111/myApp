@@ -25,12 +25,19 @@
             </mat-card-title>
           </mat-card-header>
           <mat-card-content class="dashboard-card-content">
-            <p><img class="images"
+            <!-- <div>
+                <div><img class="images"
                 src="{{card.image}}" alt="profile image"
-                />
-                <span class="message">{{card.message}}</span>
+                /></div>
+                <div><span class="message">{{card.message}}</span></div>
 
-            </p>
+            </div> -->
+            
+            <div>
+                <img class="images"
+                src="{{card.image}}" alt="profile image"
+                /><span class="message">{{card.message}}</span>
+            </div>
             
           </mat-card-content>
         </mat-card>
